@@ -10,7 +10,9 @@ public class WebController {
 
     @GetMapping("/")
     public String home() {
-        return "index"; // Sẽ chuyen hello.jsp
+
+        return "index"; // Sẽ chuyen den hello.jsp
+
     }
     @GetMapping("/hello")
     public String hello() {
