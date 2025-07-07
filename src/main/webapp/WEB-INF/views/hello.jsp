@@ -6,6 +6,6 @@
     <meta charset="UTF-8">
 </head>
 <body>
-<h1>Chào từ Hello!</h1>
+<h1>Chào từ Helloscc!</h1>
 </body>
 </html>
