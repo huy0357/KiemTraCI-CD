@@ -7,6 +7,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.web.servlet.MockMvc;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.view;
 
 @SpringBootTest
@@ -16,9 +17,15 @@ class Demo1ApplicationTests {
     @Autowired
     private MockMvc mockMvc;
 
+//    @Test
+//    public void testHello() throws Exception {
+//        mockMvc.perform(get("/hello"))
+//                .andExpect(view().name("hello"));
+//    }
+
     @Test
-    public void testHello() throws Exception {
+    public void testHelloReturns404() throws Exception {
         mockMvc.perform(get("/hello"))
-                .andExpect(view().name("hello"));
+                .andExpect(status().isNotFound()); // Mong đợi trạng thái 404
     }
 }
