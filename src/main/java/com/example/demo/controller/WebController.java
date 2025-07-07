@@ -10,14 +10,12 @@ public class WebController {
 
     @GetMapping("/")
     public String home() {
-        return "index"; // Sẽ load hello.jsp
+        return "index"; // Sẽ chuyen hello.jsp
     }
     @GetMapping("/hello")
     public String hello() {
         return "hello"; // Sẽ load hello.jsp
     }
-
-
     @GetMapping("/user")
     public String user() {
         return "user"; // Trả về file user.html trong templates

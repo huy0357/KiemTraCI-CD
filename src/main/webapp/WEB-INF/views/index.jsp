@@ -12,7 +12,9 @@
 </head>
 <body>
 <h1>hello web Demo1!</h1>
-<a href="/demo1/hello">letgo Hello</a><br>
-<a href="/demo1/user">letgo User</a>
+
+<a href="/hello">Here we go Hello</a><br>
+<a href="/user">Here we go User</a>
+
 </body>
 </html>
