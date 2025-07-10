@@ -26,6 +26,6 @@ class Demo1ApplicationTests {
 //    @Test
 //    public void testHelloReturns404() throws Exception {
 //        mockMvc.perform(get("/hello"))
-//                .andExpect(status().isNotFound()); // Mong đợi trạng thái 405
+//                .andExpect(status().isNotFound()); // Mong huytest
 //    }
 }
