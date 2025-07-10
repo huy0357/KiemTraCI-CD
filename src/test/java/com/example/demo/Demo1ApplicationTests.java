@@ -17,15 +17,15 @@ class Demo1ApplicationTests {
     @Autowired
     private MockMvc mockMvc;
 // test success
-    @Test
-    public void testHello() throws Exception {
-        mockMvc.perform(get("/hello"))
-                .andExpect(view().name("hello"));
-    }
-
 //    @Test
-//    public void testHelloReturns404() throws Exception {
+//    public void testHello() throws Exception {
 //        mockMvc.perform(get("/hello"))
-//                .andExpect(status().isNotFound()); // Mong huytest
+//                .andExpect(view().name("hello"));
 //    }
+
+    @Test
+    public void testHelloReturns404() throws Exception {
+        mockMvc.perform(get("/hello"))
+                .andExpect(status().isNotFound()); // Mong huytest
+    }
 }
